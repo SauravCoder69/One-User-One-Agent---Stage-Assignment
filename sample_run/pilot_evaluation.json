@@ -1,0 +1,52 @@
+{
+  "estimand": "intent-to-treat by randomized pilot assignment",
+  "assignment_rows": 3891,
+  "unique_assigned_users": 3891,
+  "outcome_rows": 3891,
+  "unique_outcome_users": 3891,
+  "groups": {
+    "treatment": {
+      "assigned_users_with_outcome": 1912,
+      "succeeded": 349,
+      "failed": 1563,
+      "success_rate": 0.1825,
+      "success_rate_wilson_95_ci": [
+        0.1659,
+        0.2005
+      ]
+    },
+    "holdout": {
+      "assigned_users_with_outcome": 1979,
+      "succeeded": 387,
+      "failed": 1592,
+      "success_rate": 0.1956,
+      "success_rate_wilson_95_ci": [
+        0.1787,
+        0.2136
+      ]
+    }
+  },
+  "absolute_success_rate_difference": -0.0131,
+  "relative_success_rate": 0.933,
+  "absolute_difference_approximate_95_ci": [
+    -0.0377,
+    0.0115
+  ],
+  "positive_impact_supported_by_interval": false,
+  "missing_outcomes": 0,
+  "outcomes_without_assignment": 0,
+  "assignment_vs_outcome_arm_mismatches": 0,
+  "served_vs_unserved_observational_only": {
+    "true": {
+      "users": 217,
+      "succeeded": 87,
+      "success_rate": 0.4009
+    },
+    "false": {
+      "users": 3674,
+      "succeeded": 649,
+      "success_rate": 0.1766
+    }
+  },
+  "interpretation": "Use randomized treatment versus holdout as the primary comparison. Served versus unserved conditions on post-assignment behavior and is reported only as observational context. The approximate normal difference interval includes zero when the evidence does not support a positive causal impact."
+}

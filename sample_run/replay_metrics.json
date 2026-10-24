@@ -1,0 +1,37 @@
+{
+  "historical_source_rows": 142906,
+  "historical_unique_payloads_added_this_run": 140730,
+  "replay": {
+    "live_seen": 607,
+    "live_new": 600,
+    "triggers_seen": 2769,
+    "unique_trigger_ids": 2679,
+    "duplicate_trigger_ids": 90,
+    "controls_seen": 4
+  },
+  "triggered_users": 1746,
+  "decisions_persisted": 2679,
+  "actions_persisted": 1037,
+  "model_faults_reproduced": 5,
+  "latency_budget_ms": 200,
+  "measured_latency_ms": {
+    "count": 2679,
+    "mean": 40.75,
+    "max": 587.776,
+    "within_budget": 2676,
+    "over_budget": 3
+  },
+  "decision_reasons": {
+    "personalized_home_page_for_current_goal": 1037,
+    "holdout_no_action": 1316,
+    "active_personalization_still_live": 189,
+    "user_data_store_latency_exceeds_budget": 15,
+    "no_available_titles_for_current_dialect": 101,
+    "model_fault:unsupported_claim": 3,
+    "no_eligible_measurable_goal": 2,
+    "model_provider_unavailable": 11,
+    "model_fault:malformed_output": 1,
+    "latency_budget_exceeded": 3,
+    "user_data_store_timeout": 1
+  }
+}
