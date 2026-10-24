@@ -1,3 +1,5 @@
+.venv/
 __pycache__/
 *.py[cod]
-/sample_run/*_state.db
+*.db
+.env
